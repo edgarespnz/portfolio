@@ -26,7 +26,7 @@ function App() {
           <Route path='/searchbar' element={<SearchBar />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
 
-          <Route path="/todolist"
+          <Route path="/portfolio/todolist"
 
             element={
               <PrivateRoute>
@@ -35,7 +35,7 @@ function App() {
             }
           ></Route>
 
-          <Route path="/musicplayer"
+          <Route path="/portfolio/musicplayer"
 
             element={
               <PrivateRoute>
@@ -44,7 +44,7 @@ function App() {
             }
           ></Route>
 
-          <Route path="/musicplayer/update-profile"
+          <Route path="/portfolio/musicplayer/update-profile"
 
             element={
               <PrivateRoute>
@@ -54,10 +54,10 @@ function App() {
           ></Route>
 
 
-          <Route path='/sign-up' element={<SignUp />}></Route>
-          <Route path='/log-in' element={<Login />}></Route>
-          <Route path='/my-resume' element={<Resume />}></Route>
-          <Route path='/forgot-password' element={<ForgotPassword />}></Route>
+          <Route path='/portfolio/sign-up' element={<SignUp />}></Route>
+          <Route path='/portfolio/log-in' element={<Login />}></Route>
+          <Route path='/portfolio/my-resume' element={<Resume />}></Route>
+          <Route path='/portfolio/forgot-password' element={<ForgotPassword />}></Route>
         </Routes>
       </AuthProvider>
 
