@@ -24,11 +24,11 @@ function Header() {
                     <Link to={'/portfolio/my-resume'} style={{textDecoration: 'none' , marginLeft: '25px'}} ><Nav.Item className="text-secondary">My resumee</Nav.Item></Link>
                         <NavDropdown title="Projects" style={{marginLeft: '1.5rem'}} >
                             
-                            <NavDropdown.Item ><Link to={'/portfolio/searchbar'}>Word Searchbar</Link></NavDropdown.Item>
+                            <NavDropdown.Item ><Link className="text-dark" style={{textDecoration: 'none'}} to={'/portfolio/searchbar'}>Word Searchbar</Link></NavDropdown.Item>
                             
-                            <NavDropdown.Item > <Link to={'/portfolio/todolist'}>To do List</Link></NavDropdown.Item>
+                            <NavDropdown.Item > <Link className="text-dark" style={{textDecoration: 'none'}} to={'/portfolio/todolist'}>To do List</Link></NavDropdown.Item>
                             <Link to={'/portfolio/searchbar'}></Link>
-                            <NavDropdown.Item > <Link to={'/portfolio/searchbar'}>Music Player</Link></NavDropdown.Item>
+                            <NavDropdown.Item > <Link className="text-dark" style={{textDecoration: 'none'}} to={'/portfolio/searchbar'}>Music Player</Link></NavDropdown.Item>
                             
                             
                             
