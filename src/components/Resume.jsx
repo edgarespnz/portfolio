@@ -68,7 +68,7 @@ export default function Resume() {
                                 <li className='mb-3' style={{ borderBottom: '2px solid black' }}>
                                     <h3 className='text-uppercase' style={{ fontSize: 'large' , overflowWrap: 'break-word' }}>Languages</h3>
                                 </li>
-                                <h4 style={{ fontSize: 'small', color: 'black', fontWeight: 'bold' }}>Adress</h4>
+                              
                                 <h5 style={{ fontSize: 'small', color: 'black', fontWeight: 'light' }} className='text-secondary'>English {'(fluent)'}</h5>
                                 <h5 style={{ fontSize: 'small', color: 'black', fontWeight: 'light' }} className='text-secondary'>Spanish  {'(native)'}</h5>
                             </li>

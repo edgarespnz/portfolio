@@ -13,7 +13,7 @@ function Contact() {
 
     return (
         <main className="d-flex  align-items-center justify-content-center p-5 " style={{ backgroundColor: 'rgb(40, 44, 52)', height: '92.5vh' }}>
-            <Container className="w-100 p-3 bg-white rounded border border-0" style={{ maxWidth: '700px' }}>
+            <Container className="w-100 p-3 bg-white rounded border border-0" style={{ maxWidth: '100vh' }}>
                 <Row>
                     <Col className="col-sm-4 d-flex flex-column justify-content-center" style={{ borderRight: '0.3rem solid' }}>
                         <p className="font-weight-bold text-center">This form was made with: </p>
@@ -27,7 +27,7 @@ function Contact() {
 
                     <Col className="col-sm-8" >
                         <Form>
-                            <h1>Send me a message! <Envelope /></h1>
+                            <h1>Send me a message! <span><Envelope/></span></h1>
                             <Form.Group>
                                 <Form.Label >Name or Company Name</Form.Label>
                                 <Form.Control className="mb-3" type="text" placeholder="Your Name" />

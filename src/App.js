@@ -15,53 +15,53 @@ import ForgotPassword from './components/auth/ForgotPassword';
 import UpdateProfile from './components/auth/UpdateProfile';
 import Resume from './components/Resume';
 import Header from './components/Header';
+import  './styles.css'
 
 function App() {
   return (
+    
+    <AuthProvider>
+          <Header/>
+      <Routes>
 
-      <AuthProvider>
-        <Header/>
-        <Routes>
-          <Route path='/portfolio' element={<Home />}></Route>
-          <Route path='/searchbar' element={<SearchBar />}></Route>
-          <Route path='/contact' element={<Contact />}></Route>
+        <Route path='/portfolio' element={<Home />}></Route>
+        <Route path='/portfolio/searchbar' element={<SearchBar />}></Route>
+        <Route path='/portfolio/contact' element={<Contact />}></Route>
 
-          <Route path="/portfolio/todolist"
+        <Route path="/portfolio/todolist"
 
-            element={
-              <PrivateRoute>
-                <ToDoList />
-              </PrivateRoute>
-            }
-          ></Route>
+          element={
+            <PrivateRoute>
+              <ToDoList />
+            </PrivateRoute>
+          }
+        ></Route>
 
-          <Route path="/portfolio/musicplayer"
+        <Route path="/portfolio/musicplayer"
 
-            element={
-              <PrivateRoute>
-                <MusicPlayer />
-              </PrivateRoute>
-            }
-          ></Route>
+          element={
+            <PrivateRoute>
+              <MusicPlayer />
+            </PrivateRoute>
+          }
+        ></Route>
 
-          <Route path="/portfolio/musicplayer/update-profile"
+        <Route path="/musicplayer/update-profile"
 
-            element={
-              <PrivateRoute>
-                <UpdateProfile />
-              </PrivateRoute>
-            }
-          ></Route>
-
-
-          <Route path='/portfolio/sign-up' element={<SignUp />}></Route>
-          <Route path='/portfolio/log-in' element={<Login />}></Route>
-          <Route path='/portfolio/my-resume' element={<Resume />}></Route>
-          <Route path='/portfolio/forgot-password' element={<ForgotPassword />}></Route>
-        </Routes>
-      </AuthProvider>
+          element={
+            <PrivateRoute>
+              <UpdateProfile />
+            </PrivateRoute>
+          }
+        ></Route>
 
 
+        <Route path='/sign-up' element={<SignUp />}></Route>
+        <Route path='/log-in' element={<Login />}></Route>
+        <Route path='/portfolio/my-resume' element={<Resume />}></Route>
+        <Route path='/forgot-password' element={<ForgotPassword />}></Route>
+      </Routes>
+    </AuthProvider>
   );
 }
 

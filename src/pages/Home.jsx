@@ -1,50 +1,84 @@
 import React from "react";
 import Container from "react-bootstrap/esm/Container";
-import Card from 'react-bootstrap/Card';
-import Col from "react-bootstrap/esm/Col";
+import { Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/esm/Button";
-import Image from 'react-bootstrap/Image'
+
+import { SiCss3, SiExpress, SiHtml5, SiJavascript, SiPostgresql, SiReact } from "react-icons/si";
+import { Link } from "react-router-dom";
+
 
 function Home() {
-    const iconsWidth = 100;
-    const iconsHeight = 100;
+    const iconSize = 100;
 
     return (
-        <main className='index-MastHead d-flex flex-column align-items-center justify-content-center' style={{ backgroundColor: '#282c34' , height: '92.5vh'}}>
-                <Card className=" mb-4 p-2" style={{ margin: '15px'}} >
-                    <Card.Body>
-                        <Card.Title style={{ fontSize: 'xx-large' , fontWeight: 'bolder', textAlign:'center'}}>Welcome to my portfolio!</Card.Title>
-                        <Card.Text style={{textAlign: 'center'}}>
-                            In this page you will see all my skills , developments and real life projects that i've done
-                        </Card.Text>
-                       
-                    </Card.Body>
-                    <Container className="d-grid gap-2 mb-3">
-                        <Button variant="dark" size="lg" href="/contact">Contact me</Button>
-                        <Button variant="dark" size='lg' href="/my-resume">See my Resume</Button>
+        <Container>
+            <Row>
+                <Col sm={4} className='p-2'>
+                    <Container >
+                        <h1 className="mt-5" style={{ fontWeight: 'bolder' }}>Hi! I'm <Button className="bg-dark border-dark"> UI/UX</Button></h1>
+                        <h1 style={{ fontWeight: 'bolder' }}>Edgar Espinoza</h1>
+
+                        <h5>Developing full stack web applications for over <span  style={{fontWeight: 'bolder'}}>2 years.</span> </h5>
                     </Container>
-                </Card>
 
-                <Card className="m-2">
-                    <Card.Body>
-                        <Card.Text style={{fontSize: 'x-large', fontWeight: 'bold' ,textAlign: 'center'}}>
-                            I've used all of this technologies for the development of this portfolio
-                        </Card.Text>
-                            <Col className="d-flex justify-content-around align-items-center mt-5">
-                                <Image src="./logo192.png" rounded width={iconsWidth} height={iconsHeight} />
-                                <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTab05l3ndGtZqyqxgTeOkmB7g2eDGyYrQp60gRu108tIEXOLQTl8tf9Jpx90UiNJEIv1Q&usqp=CAU" rounded width={iconsHeight} height={iconsHeight} />
-                                <Image src="https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn" rounded width={iconsHeight} height={iconsHeight} />
 
+                        <Row className="p-3">
+                            <Col className="d-grid ">
+                            <Button size="lg"  variant="outline-dark">Hire Me</Button>
                             </Col>
-                            <Col className="d-flex justify-content-around align-items-center mt-5">
-                                <Image src="https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo" rounded width={iconsWidth} height={iconsHeight} />
-                                <Image src="https://miro.medium.com/max/1400/1*XP-mZOrIqX7OsFInN2ngRQ.png" rounded  width={'fit-content'} height={iconsHeight} style={{minWidth: 'auto'}}/>
-                                <Image src="https://audviklabs.in/wp-content/uploads/2022/01/postgreSQL.png" rounded width={'fit-content'} height={iconsHeight} style = {{minHeight: 'auto'}}/>
 
+                            <Col className="d-grid ">
+                            <Button size="lg" variant="dark"> Projects</Button>
                             </Col>
-                    </Card.Body>
-                </Card>
-        </main>
+                        </Row>
+
+                        <Row className="p-3">
+                            <Col className="d-grid ">
+                            <Button size="lg"  variant="outline-info" href="/portfolio/my-resume">See my Resumee</Button>
+                            </Col>
+                        </Row>
+
+                        <Container className="mt-3" style={{minWidth: '100vh'}}>
+                            <h4 style={{fontWeight: 'bolder'}}>Contact</h4>
+                            <h5>edgar.esp.carrion@gmail.com</h5>
+                        </Container>
+
+                        <Container className="mt-5" style={{minWidth: '100vh'}}>
+                            <h4 style={{fontWeight: 'bolder'}}>LinkedIn</h4>
+                            <Link to={'shorturl.at/irAR3'} style={{textDecoration: 'none'}}><h5 >edgarespnz</h5></Link>
+                        </Container>
+
+                        
+                </Col>
+
+                <Col className="bg-light" sm={8} style={{ minHeight: '91vh' }}>
+                    <h2 className="text-center mt-5">I've created this portfolio using the following technologies.</h2>
+                    <Row className="p-5">
+                        <Col className="d-flex  justify-content-around" >
+
+                            <SiReact size={iconSize} />
+                            <SiJavascript size={iconSize} />
+                            <SiHtml5 size={iconSize} />
+
+                        </Col>
+                    </Row>
+
+                    <Row className="p-5 mt-5">
+                        <Col className="d-flex  justify-content-around" >
+
+                            <SiCss3 size={iconSize} />
+                            <SiExpress size={iconSize} />
+                            <SiPostgresql size={iconSize} />
+
+                        </Col>
+                    </Row>
+                    
+                </Col>
+                
+            </Row>
+
+        </Container>
+
     );
 }
 
