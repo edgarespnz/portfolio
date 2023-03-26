@@ -23,11 +23,9 @@ function App() {
     <AuthProvider>
           <Header/>
       <Routes>
-
         <Route path='/portfolio' element={<Home />}></Route>
         <Route path='/portfolio/searchbar' element={<SearchBar />}></Route>
         <Route path='/portfolio/contact' element={<Contact />}></Route>
-
         <Route path="/portfolio/todolist"
 
           element={

@@ -18,37 +18,36 @@ function Home() {
                         <h1 className="mt-5" style={{ fontWeight: 'bolder' }}>Hi! I'm <Button className="bg-dark border-dark"> UI/UX</Button></h1>
                         <h1 style={{ fontWeight: 'bolder' }}>Edgar Espinoza</h1>
 
-                        <h5>Developing full stack web applications for over <span  style={{fontWeight: 'bolder'}}>2 years.</span> </h5>
+                        <h5>Developing full stack web applications for over <span style={{ fontWeight: 'bolder' }}>2 years.</span> </h5>
                     </Container>
 
 
-                        <Row className="p-3">
-                            <Col className="d-grid ">
-                            <Button size="lg"  variant="outline-dark">Hire Me</Button>
-                            </Col>
+                    <Row className="p-3">
+                        <Col className="d-grid ">
+                            <Button size="lg" variant="outline-dark">Hire Me</Button>
+                        </Col>
 
-                            <Col className="d-grid ">
+                        <Col className="d-grid ">
                             <Button size="lg" variant="dark"> Projects</Button>
-                            </Col>
-                        </Row>
+                        </Col>
+                    </Row>
 
-                        <Row className="p-3">
-                            <Col className="d-grid ">
-                            <Button size="lg"  variant="outline-info" href="/portfolio/my-resume">See my Resumee</Button>
-                            </Col>
-                        </Row>
+                    <Row className="p-3">
+                        <Col className="d-grid ">
+                            <Link to={"/portfolio/my-resume"}><Button size="lg" variant="outline-info">See my Resumee</Button></Link>                            </Col>
+                    </Row>
 
-                        <Container className="mt-3" style={{minWidth: '100vh'}}>
-                            <h4 style={{fontWeight: 'bolder'}}>Contact</h4>
-                            <h5>edgar.esp.carrion@gmail.com</h5>
-                        </Container>
+                    <Container className="mt-3" style={{ minWidth: '100vh' }}>
+                        <h4 style={{ fontWeight: 'bolder' }}>Contact</h4>
+                        <h5>edgar.esp.carrion@gmail.com</h5>
+                    </Container>
 
-                        <Container className="mt-5" style={{minWidth: '100vh'}}>
-                            <h4 style={{fontWeight: 'bolder'}}>LinkedIn</h4>
-                            <Link to={'shorturl.at/irAR3'} style={{textDecoration: 'none'}}><h5 >edgarespnz</h5></Link>
-                        </Container>
+                    <Container className="mt-5" style={{ minWidth: '100vh' }}>
+                        <h4 style={{ fontWeight: 'bolder' }}>LinkedIn</h4>
+                        <Link to={'https://shorturl.at/irAR3'} target='_blank' style={{ textDecoration: 'none' }}><h5 >edgarespnz</h5></Link>
+                    </Container>
 
-                        
+
                 </Col>
 
                 <Col className="bg-light" sm={8} style={{ minHeight: '91vh' }}>
@@ -72,11 +71,8 @@ function Home() {
 
                         </Col>
                     </Row>
-                    
                 </Col>
-                
             </Row>
-
         </Container>
 
     );
