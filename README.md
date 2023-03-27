@@ -1,6 +1,6 @@
 # Hello! this is my portfolio
 
-My name is Edgar Espinoza and i'm a software developer currently studing system engineering at the University of Lima
+My name is Edgar Espinoza and i'm a software developer student currently enrolled at system engineering at the University of Lima
 
 This portfolio was made primarly with ReactJS , JavaScript and Bootstrap for the frontend and ExpressJS + PostgreSQL for the backend
 
