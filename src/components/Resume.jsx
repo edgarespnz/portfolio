@@ -3,6 +3,7 @@ import { Container, Col, Row } from 'react-bootstrap'
 import { FaReact } from 'react-icons/fa'
 import { DiJavascript1, DiHtml5, DiCss3, DiPostgresql, DiWordpress } from 'react-icons/di';
 import { SiBootstrap, SiOracle } from 'react-icons/si'
+import { Link } from 'react-router-dom';
 
 export default function Resume() {
     let iconSize = 20;
@@ -42,6 +43,13 @@ export default function Resume() {
                                     <h4 style={{ fontSize: 'small', color: 'black', fontWeight: 'bold' }}>Email</h4>
                                     <h5 style={{ fontSize: 'small', color: 'black', fontWeight: 'light' , overflowWrap: 'break-word' }} className='text-secondary'>
                                         edgar.esp.carrion@gmail.com
+                                    </h5>
+                                </li>
+
+                                <li className='mt-4'>
+                                    <h4 style={{ fontSize: 'small', color: 'black', fontWeight: 'bold' }}>GitHub</h4>
+                                    <h5 style={{ fontSize: 'small', color: 'black', fontWeight: 'light' , overflowWrap: 'break-word' }} className='text-secondary'>
+                                        <Link to={"https://github.com/edgarespnz"} target='_blank'>https://github.com/edgarespnz</Link>
                                     </h5>
                                 </li>
 
