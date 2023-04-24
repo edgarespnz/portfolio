@@ -38,8 +38,8 @@ function Home() {
 
                     <Container className="mt-5" style={{ minWidth: '100vh', fontStyle: 'oblique'}}>
                         <h5 className="text-warning" style={{ fontWeight: 'bolder' }}>Note</h5>
-                        <p style={{columnCount: '3'}}>This project is made only for desktop 
-                            , it will possibly break on Mobile</p>
+                        <p> This project is made only for desktop </p>
+                        <p> it will possibly break on Mobile</p>
                     </Container>
 
 
